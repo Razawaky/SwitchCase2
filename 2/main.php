@@ -2,18 +2,19 @@
 
 $valor = $_POST['num'];
 
-if($valor % 2 == 0 ) {
-    echo $valor ." É divisivel por 2 ";
+if ($valor % 2 == 0 && $n % 5 == 0 && $n % 10 == 0) {
+    echo $n . " é divisível por 2, 5 e 10";
 }
-if($valor % 5 == 0) {
-    echo $valor ." É divisivel por 5 ";
+elseif ($n % 10 == 0) {
+    echo $valor . " é divisível por 10";
 }
-if($valor % 10 == 0) {
-    echo $valor ." É divisivel por 10 ";
+elseif ($valor % 2 == 0) {
+    echo $valor . " é divisível por 2";
 }
-
-else{
-   echo "Não é divisvel";
+elseif ($valor % 5 == 0) {
+    echo $valor . " é divisível por 5";
 }
-
+else {
+    echo $valor . " não é divisivel";
+}
 ?>
